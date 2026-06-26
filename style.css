@@ -719,11 +719,18 @@ a {
 
 @media (max-width: 480px) {
     .footer-top {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+    .services-col {
+        grid-column: span 2;
     }
     .services-list {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
+    }
+    .services-list ul {
+        flex: 1;
     }
 }
 
